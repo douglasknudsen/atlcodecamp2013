@@ -1,0 +1,12 @@
+{
+  "name": "myServer",
+  "description": "simple example",
+  "author": "Dr. Zhivago ",
+  "dependencies": {
+    "lodash": "1.3.x"
+  },
+  "devDependencies": {
+    "underscore": "~1.5.1"
+  },
+  "engine": "node >= 0.10.0"
+}

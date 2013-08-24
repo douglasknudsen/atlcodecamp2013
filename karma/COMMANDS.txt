@@ -1,0 +1,9 @@
+
+//setup the karma tests and manifest file
+karma init
+
+//kick it all off in watch mode
+karma start
+
+//manually run if needed
+karma run

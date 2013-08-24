@@ -1,0 +1,2 @@
+//on a mac, this is super easy :)
+python -m SimpleHTTPServer 8000

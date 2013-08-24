@@ -1,0 +1,4 @@
+//look in the Gruntfile for all tasks
+
+//start a server, watch ALL files, if any files change, compile and reload web page
+grunt server

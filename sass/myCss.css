@@ -1,0 +1,55 @@
+/*** some variable action **/
+#myCoolID {
+  background-color: #33ddff;
+  float: left; }
+  #myCoolID article {
+    color: #33ddff; }
+
+/*** some variable action END **/
+/*** parental references **/
+#myId {
+  color: #f0f;
+  background-color: #00f;
+  /** <--- parent reference **/ }
+  #myId:hover {
+    color: #efefef; }
+
+/*** end parental references **/
+/** Nesting Example begin **/
+.mySuperDiv {
+  width: 80%;
+  height: 23px; }
+  .mySuperDiv ul {
+    list-style-type: none; }
+  .mySuperDiv li {
+    float: left; }
+    .mySuperDiv li a {
+      color: #0f0; }
+
+/** nesting example end **/
+/** extends example end **/
+.levelOne, .levelTwo {
+  color: #ddeeff; }
+
+.levelTwo {
+  text-align: right; }
+
+/** extends example end **/
+/** 
+this would compile and append uglycorners.scss 
+right here >>>>>> 
+@import "uglycorners"; 
+**/
+/**** functions begin **/
+#navbar {
+  width: 800px;
+  border-bottom: 2px solid #ce4dd6; }
+  #navbar li {
+    float: left;
+    width: 150px;
+    background-color: white; }
+    #navbar li:hover {
+      background-color: #d976e0;
+      color: #67a66b; }
+
+/** function END **/

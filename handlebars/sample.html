@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="js/handlebars-1.0.rc.3.js"></script>
+
+	<script id="entry-template" type="text/x-handlebars-template">
+		<div class="entry">
+		  <h1>{{title}}</h1>
+		  <div class="body">
+		    {{body}}
+		  </div>
+		</div>
+	</script>
+
+	<script type="text/javascript">
+		function onLoad()	{
+			//haha jQuery way --> var source   = $("#entry-template").html();
+			var source = document.getElementById("entry-template").innerHTML;
+			var template = Handlebars.compile(source);
+			var context = {title: "My New Post", body: "This is my first post!"}
+			var html    = template(context);//magical binding occurs
+			//document.getElementById("myMainDiv").innerHTML = html;
+
+			//simpliatic list
+			document.getElementById("myMainDiv").innerHTML = html + html + html +html +html;
+
+		}
+	</script>
+</head>
+<body onLoad="onLoad()">
+	<!-- using emmet I just type #myMainDiv and mash TAB! -->
+	<div id="myMainDiv"></div>
+</body>
+</html>

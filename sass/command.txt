@@ -1,0 +1,10 @@
+
+
+
+sass myCss.scss
+
+sass myCss.scss someOtherCss.css 
+
+
+sass --watch myCss.scss:myCss.css
+

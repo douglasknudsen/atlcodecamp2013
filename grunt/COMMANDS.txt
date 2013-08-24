@@ -1,0 +1,19 @@
+
+
+//start by deleting all in /grunt excpet the Grntfile.js
+
+//A FLOW
+//1)creates basic package.json manifest for NPM/Node
+npm init
+
+//2) now install grunt...LOCAL!!!!!!
+npm install grunt --save-dev
+
+//3) lather
+npm install grunt-contrib-uglify --save-dev
+
+//note that manifest is updated
+
+//4) repeat and rinse
+//now run grunt
+grunt

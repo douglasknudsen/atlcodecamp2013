@@ -1,0 +1,83 @@
+/*** some variable action **/
+$iAmACoolColour: #33ddff;
+
+#myCoolID {
+  background-color:$iAmACoolColour;
+  float:left;
+
+  article {
+    color: $iAmACoolColour;
+  }
+}
+//YES! You can use a variables.scss file and import
+
+/*** some variable action END **/
+
+/*** parental references **/
+#myId	{
+	color:#f0f;
+	background-color:#00f;
+
+	&:hover { color:#efefef; }; /** <--- parent reference **/
+
+}
+
+/*** end parental references **/
+
+/** Nesting Example begin **/
+
+.mySuperDiv {
+  width: 80%;
+  height: 23px;
+
+  ul { list-style-type: none; }
+  li {
+    float: left;
+    a { color: #0f0; }
+  }
+}
+/** nesting example end **/
+
+
+/** extends example end **/
+.levelOne {
+  color:#ddeeff;
+}
+
+.levelTwo {
+  @extend .levelOne;
+  text-align: right;
+}
+/** extends example end **/
+
+
+/** 
+this would compile and append uglycorners.scss 
+right here >>>>>> 
+@import "uglycorners"; 
+**/
+
+
+/**** functions begin **/
+#navbar {
+  $navbar-width: 800px;
+  $items: 5;
+  $navbar-color: #ce4dd6;
+
+  width: $navbar-width;
+  border-bottom: 2px solid $navbar-color;
+
+  li {
+    float: left;
+    width: $navbar-width/$items - 10px;
+
+    background-color:
+      lighten($navbar-color, 60%);
+    &:hover {
+      background-color:
+        lighten($navbar-color, 10%);
+      color:mix($navbar-color, #00ff00 );  
+    }
+  }
+}
+/** function END **/

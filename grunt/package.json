@@ -1,0 +1,20 @@
+{
+  "name": "grunt-silly",
+  "version": "0.0.0",
+  "description": "this is a test",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "foo",
+    "goo",
+    "hoo"
+  ],
+  "author": "me",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2"
+  }
+}
